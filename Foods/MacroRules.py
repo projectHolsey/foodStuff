@@ -1,0 +1,2 @@
+class MacroRules:
+    pass
