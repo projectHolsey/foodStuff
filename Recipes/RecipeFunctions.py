@@ -23,7 +23,7 @@ class RecipeFuncs:
         self.recipe = recipe_obj if recipe_obj else None
         self.continue_polling = True
 
-    def create_and_edit_recipe(self, ):
+    def create_and_edit_recipe(self):
 
         if not self.recipe:
             name = input("Please enter a name for the recipe : ")

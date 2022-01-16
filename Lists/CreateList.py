@@ -40,6 +40,19 @@ class CreateList:
         self.continue_polling = True
         return recipe
 
+    def edit_list(self):
+
+        while self.continue_polling:
+            print("1. Add Recipe")
+            print("2. Remove Recipe")
+            print("3. Show all Recipes")
+            print("4. Show list ingredients")
+            print("5. Show list recipes macros (short)")
+            print("6. Save list")
+            choice = get_int_input("Choose option > ", 1, 6)
+            self.handle_choice(choice)
+            print("\n\n")
+
     def handle_choice(self, x):
         if x == 0:
             self.continue_polling = False
